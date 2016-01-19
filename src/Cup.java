@@ -5,13 +5,15 @@ public class Cup {
 
     private int temperature;
     private String content;
-    private boolean lidOn;
-    private boolean filled;
+    private boolean lidOn = true;
+    private boolean filled = false;
     private Lid lid;
+    private String color = "white";
 
-    public Cup(boolean lidOn){
+    public Cup(boolean lidOn, String color){
         lid = new Lid();
         this.lidOn = lidOn;
+        this.color = color;
     }
 
     public int getTemperature() {

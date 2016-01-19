@@ -1,4 +1,3 @@
-import com.sun.tools.doclets.formats.html.SourceToHTMLConverter;
 
 /**
  * Created by magnusfinvik on 18.01.2016.
@@ -6,7 +5,7 @@ import com.sun.tools.doclets.formats.html.SourceToHTMLConverter;
 public class Main {
 
     public static void main(String[] args){
-        Cup myCup = new Cup(true);
+        Cup myCup = new Cup(true, "white");
         myCup.fillCup("coffee");
         myCup.heatTheContentTo(80);
         myCup.isTheCupFilled();
